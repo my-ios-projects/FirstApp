@@ -10,18 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
-   // Outlets
+    // Outlets
     @IBOutlet weak var stateLabel: UILabel!
     
     
+    // view: is the screen
     
-    //
+    /*
+     * View: is the screen.
+     * Did:  means right after.
+     * Load: means loaded into memory.
+     
+     * General meaning: right after the view is loaded into memory.
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("viewDidLoad")
+    } // end viewDidLoad
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
     }
 
-
+    
 
 
     @IBAction func recordAudio(_ sender: Any) {
