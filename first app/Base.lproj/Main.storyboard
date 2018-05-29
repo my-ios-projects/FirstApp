@@ -28,11 +28,29 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgd-LK-aWF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-Ra-TUz">
+                                <rect key="frame" x="132" y="356" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bHZ-rX-e5N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYI-1K-55D">
+                                <rect key="frame" x="134" y="385" width="106" height="30"/>
+                                <state key="normal" title="Stop Recording"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wYI-1K-55D" firstAttribute="top" secondItem="LVF-Ra-TUz" secondAttribute="bottom" constant="8" id="CJS-fp-LoZ"/>
+                            <constraint firstItem="wYI-1K-55D" firstAttribute="centerX" secondItem="hUG-6y-Roq" secondAttribute="centerX" id="E02-Th-FLD"/>
                             <constraint firstItem="hUG-6y-Roq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Edd-sq-pMx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wYI-1K-55D" secondAttribute="bottom" constant="252" id="F6K-mR-2jz"/>
                             <constraint firstItem="hUG-6y-Roq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I9O-98-hpp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LVF-Ra-TUz" secondAttribute="trailing" id="NI3-Dk-pCV"/>
+                            <constraint firstItem="LVF-Ra-TUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="132" id="a6J-8H-6zH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
