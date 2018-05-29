@@ -14,7 +14,6 @@ class AppDelegate: UIResponder,
 
     var window: UIWindow?
 
-
     // This Function is called right after the app launches
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
