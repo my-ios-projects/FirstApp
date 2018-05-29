@@ -54,7 +54,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="recoding" destination="hUG-6y-Roq" id="3Vb-gX-DcJ"/>
                         <outlet property="stateLabel" destination="LVF-Ra-TUz" id="YxY-dZ-a6w"/>
+                        <outlet property="stopRecording" destination="wYI-1K-55D" id="K81-SF-kpr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
