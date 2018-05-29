@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     // Outlets
     @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var recoding: UIButton!
+    @IBOutlet weak var stopRecording: UIButton!
     
     
     // view: is the screen
@@ -22,6 +24,7 @@ class ViewController: UIViewController {
      * Load: means loaded into memory.
      
      * General meaning: right after the view is loaded into memory.
+     * It is called after the view is loaded into memeory.
     */
     override func viewDidLoad() {
         super.viewDidLoad()
