@@ -34,9 +34,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYI-1K-55D">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYI-1K-55D">
                                 <rect key="frame" x="135" y="385" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stop Recording"/>
                                 <connections>
                                     <action selector="stopRecodring:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QXC-S9-9ep"/>
@@ -45,6 +44,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wYI-1K-55D" firstAttribute="top" secondItem="LVF-Ra-TUz" secondAttribute="bottom" constant="8" id="1AC-Yq-may"/>
+                            <constraint firstItem="wYI-1K-55D" firstAttribute="centerX" secondItem="LVF-Ra-TUz" secondAttribute="centerX" id="6SP-ln-rvS"/>
                             <constraint firstItem="hUG-6y-Roq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R3f-X9-JM7"/>
                             <constraint firstItem="hUG-6y-Roq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPN-Wd-kZ4"/>
                             <constraint firstItem="LVF-Ra-TUz" firstAttribute="top" secondItem="hUG-6y-Roq" secondAttribute="bottom" constant="8" id="dAN-0k-abo"/>

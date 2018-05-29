@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   // Outlets
+    @IBOutlet weak var stateLabel: UILabel!
     
     
     
@@ -25,8 +27,14 @@ class ViewController: UIViewController {
     @IBAction func recordAudio(_ sender: Any) {
        
         print("Record Button is pressed")
+        stateLabel.text = "Recording ..."
     } // end recordAudio()
     
+    @IBAction func stopRecodring(_ sender: Any) {
+        
+        print("Stop Recoring is pressed")
+
+    } // stopRecodring
     
     
     
