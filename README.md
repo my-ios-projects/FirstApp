@@ -33,3 +33,13 @@ Events like (App Starts, App goes to background, App Terminates, Memory Warnings
     - record action;
 - `Outlets`: used to send commands from the code to the view; use to control the view; Every view has an outlet so that you can controll it from the code.
     - disbling recording button.
+
+
+
+### 4 Adding images
+App images are added in `Assets.xcassets`
+![Assets.xcassets](image1.jpg)
+
+
+
+
