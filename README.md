@@ -5,7 +5,7 @@ Some basic iOS concepts.
 It a class that listen to the system event; Or system calls some methods of that class if some events happends.
 Events like (App Starts, App goes to background, App Terminates, Memory Warnings, ...). So that you can handle the situation like saving data or whatever.
 
-### Will/Did methods:
+### 2 Will/Did methods:
 - `view`: is the screen.
 - `Will`: means right before.
 - `Did`: means right after.
@@ -27,3 +27,9 @@ Events like (App Starts, App goes to background, App Terminates, Memory Warnings
         print("viewDidLoad")   
     } // end viewDidLoad
 ```
+
+### 3 Outlets and Actions
+- `Actions`: sends commands from the view to the code.
+    - record action;
+- `Outlets`: used to send commands from the code to the view; use to control the view; Every view has an outlet so that you can controll it from the code.
+    - disbling recording button.
