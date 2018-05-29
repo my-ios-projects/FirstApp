@@ -37,9 +37,13 @@ Events like (App Starts, App goes to background, App Terminates, Memory Warnings
 
 
 ### 4 Adding images
-App images are added in `Assets.xcassets`
-![Assets.xcassets](image1.jpg)
+App images are added to `Assets.xcassets`
 
+<div style="text-align:center"><img src ="image1.jpg" /></div>
+
+Each image's should be in three size x1, x2 and x3. Their name follow that patter name@(2x|3x).png
+If their name follows the previous pattern, drag them all to `Assets.xcassets` 
+and each image will be added to a separate image set.
 
 
 
