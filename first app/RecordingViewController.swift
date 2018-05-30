@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordingViewController.swift
 //  first app
 //
 //  Created by Taha Magdy on 5/29/18.
@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class RecordingViewController: UIViewController {
+    
+    var audioRecorder: AVAudioRecorder!
 
     // Outlets
     @IBOutlet weak var stateLabel: UILabel!
@@ -52,6 +55,8 @@ class ViewController: UIViewController {
         
         recoding.isEnabled = false
         stopRecording.isEnabled = true
+        
+        
         
     } // end recordAudio()
     
