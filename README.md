@@ -46,4 +46,5 @@ If their name follows the previous pattern, drag them all to `Assets.xcassets`
 and each image will be added to a separate image set.
 
 
-
+### 5 Adding Navigation Controller
+`UINavigationController` is a stack handels multiple view. Here, I've connected them by a `segue` with `show`.
