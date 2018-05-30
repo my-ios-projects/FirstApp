@@ -9,6 +9,10 @@
 import UIKit
 
 class PlayAudioViewController: UIViewController {
+    
+    
+    // To recieve the audio path from the previous view.
+    var audioURL: URL!
 
     override func viewDidLoad() {
         super.viewDidLoad()
