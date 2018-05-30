@@ -58,6 +58,9 @@ class ViewController: UIViewController {
     @IBAction func stopRecodring(_ sender: Any) {
         
         print("Stop Recoring is pressed")
+        recoding.isEnabled = true
+        stopRecording.isEnabled = false
+        stateLabel.text = "Tab to Record"
 
     } // stopRecodring
     
