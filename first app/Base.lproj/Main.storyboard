@@ -124,6 +124,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JFe-vi-sth"/>
                     </view>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="Ahj-hS-MDp" id="PJy-EW-0GZ"/>
+                        <outlet property="echoButton" destination="V0j-0x-r0L" id="KGL-L4-c5w"/>
+                        <outlet property="rabbitButton" destination="8U4-w4-dwH" id="bF2-Yv-jJj"/>
+                        <outlet property="reverbButton" destination="s6V-gQ-GpL" id="9BY-nZ-VdA"/>
+                        <outlet property="snailButton" destination="i4y-SS-Grw" id="UQr-J7-hYI"/>
+                        <outlet property="stopButton" destination="o5d-zV-zfp" id="Wpn-ha-dJc"/>
+                        <outlet property="vaderButton" destination="qam-p1-kxg" id="ske-hX-lFw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F96-4F-VXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
