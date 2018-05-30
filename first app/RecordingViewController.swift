@@ -124,6 +124,7 @@ class RecordingViewController: UIViewController,
     
     
     // * Is called when segue is called before performing the segue.
+    // Here, we send the data to the next view controller.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("1")
         // preparing events for the "move" segue.
