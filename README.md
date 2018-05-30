@@ -57,3 +57,12 @@ Recoding sound using `AVFoundation`
 ### 7 Delegation
 `AVAudioRecorderDelegate` is used to implement `audioRecorderDidFinishRecording`; which is 
 called by `AVAudioRecord` once the recording finishes.
+
+
+### 8 Sending data to the next view controller
+- Added `show` segue between the two view from the storyboard; by shift draging.
+- Then, perform segue is called from the code; right after the recoring finishes.
+- `prepare` is called before be `performSegue`; so you can instantiate the next view controller and assgin a value to it.
+
+
+
