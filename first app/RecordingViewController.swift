@@ -11,6 +11,7 @@ import AVFoundation
 
 class RecordingViewController: UIViewController {
     
+    // Recording class
     var audioRecorder: AVAudioRecorder!
 
     // Outlets
@@ -55,6 +56,26 @@ class RecordingViewController: UIViewController {
         
         recoding.isEnabled = false
         stopRecording.isEnabled = true
+        
+        
+        // Get the document directory
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
+                                                          .userDomainMask, true)[0] as String
+        // Audio file name and combining path and file name onto one path.
+        let recordingName = "recordedVoice.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = URL(string: pathArray.joined(separator: "/"))
+        
+        // Getting the audio shared instance
+        let session = AVAudioSession.sharedInstance()
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord,
+                                 with:AVAudioSessionCategoryOptions.defaultToSpeaker)
+        
+        // Giving the output path to the audioRecorder object and record
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        audioRecorder.isMeteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
         
         
         
