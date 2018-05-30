@@ -47,7 +47,7 @@ and each image will be added to a separate image set.
 
 
 ### 5 Adding Navigation Controller
-`UINavigationController` is a stack handels multiple view. Here, I've connected them by a `segue` with `show`.
+`UINavigationController` is a stack handels multiple view. Here, I've connected them by a `segue` with `show` segue.
 
 
 ### 6 Recording Audio
