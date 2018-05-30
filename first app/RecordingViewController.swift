@@ -111,17 +111,29 @@ class RecordingViewController: UIViewController,
         print("Recording is finished")
         if flag {
             // Perform the segue and send the saved audio path.
+            print("3")
             performSegue(withIdentifier: "move", sender: audioRecorder.url)
+            print("2")
         }
         else{
             print("Recording have not been successfully saved :(")
         }
         
-        
-        
-        
     } // end audioRecorderDidFinishRecording()
     
+    
+    
+    // * Is called when segue is called before performing the segue.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("1")
+        // preparing events for the "move" segue.
+        if segue.identifier == "move"{
+            let nextViewController = segue.destination as! PlayAudioViewController
+            let recordingPath = sender as! URL
+            nextViewController.audioURL = recordingPath
+        } // end "move" segue preparation
+        
+    } // end prepare()
     
     
 /////////
