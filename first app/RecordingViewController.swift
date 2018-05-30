@@ -87,6 +87,11 @@ class RecordingViewController: UIViewController {
         recoding.isEnabled = true
         stopRecording.isEnabled = false
         stateLabel.text = "Tab to Record"
+        
+        // Stopping the audio and Deactivating the session
+        audioRecorder.stop()
+        let audioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setActive(false)
 
     } // stopRecodring
     
