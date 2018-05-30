@@ -74,10 +74,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-SS-Grw" userLabel="Slow Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="165.5"/>
                                                 <state key="normal" image="Slow"/>
+                                                <connections>
+                                                    <action selector="playSoundButtons" destination="mbW-mv-hWY" eventType="touchUpInside" id="itQ-s6-xq3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8U4-w4-dwH" userLabel="Fast Button">
                                                 <rect key="frame" x="175.5" y="0.0" width="175.5" height="165.5"/>
                                                 <state key="normal" image="Fast"/>
+                                                <connections>
+                                                    <action selector="playSoundButtons" destination="mbW-mv-hWY" eventType="touchUpInside" id="NTp-yu-rpu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -87,10 +93,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahj-hS-MDp" userLabel="HighPitch Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="166"/>
                                                 <state key="normal" image="HighPitch"/>
+                                                <connections>
+                                                    <action selector="playSoundButtons" destination="mbW-mv-hWY" eventType="touchUpInside" id="vY8-dw-IaH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qam-p1-kxg" userLabel="LowPitch Button">
                                                 <rect key="frame" x="175.5" y="0.0" width="175.5" height="166"/>
                                                 <state key="normal" image="LowPitch"/>
+                                                <connections>
+                                                    <action selector="playSoundButtons" destination="mbW-mv-hWY" eventType="touchUpInside" id="WF2-YA-BWX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -100,10 +112,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0j-0x-r0L" userLabel="Echo Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="165.5"/>
                                                 <state key="normal" image="Echo"/>
+                                                <connections>
+                                                    <action selector="playSoundButtons" destination="mbW-mv-hWY" eventType="touchUpInside" id="wBW-90-sF0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6V-gQ-GpL" userLabel="Reverb Button">
                                                 <rect key="frame" x="175.5" y="0.0" width="175.5" height="165.5"/>
                                                 <state key="normal" image="Reverb"/>
+                                                <connections>
+                                                    <action selector="playSoundButtons" destination="mbW-mv-hWY" eventType="touchUpInside" id="IqY-L9-mRX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -113,6 +131,9 @@
                                 <rect key="frame" x="144" y="563" width="88" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopSoundButton" destination="mbW-mv-hWY" eventType="touchUpInside" id="3K0-0d-pf4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

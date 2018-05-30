@@ -31,12 +31,24 @@ class PlayAudioViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
+    
+    // Action for the six buttons
+    @IBAction func playSoundButtons(){
+        print("play sound")
+        
+    } // end playSoundButtons()
+    
+    
+    @IBAction func stopSoundButton(){
+        print("stop sound")
+        
+    } // end stopSoundButton()
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
