@@ -9,7 +9,9 @@
 import UIKit
 import AVFoundation
 
-class RecordingViewController: UIViewController {
+class RecordingViewController: UIViewController,
+                               AVAudioRecorderDelegate // To know once the recording finishes.
+{
     
     // Recording class
     var audioRecorder: AVAudioRecorder!
@@ -58,6 +60,9 @@ class RecordingViewController: UIViewController {
         stopRecording.isEnabled = true
         
         
+    
+        
+        
         // Get the document directory
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
                                                           .userDomainMask, true)[0] as String
@@ -72,7 +77,9 @@ class RecordingViewController: UIViewController {
                                  with:AVAudioSessionCategoryOptions.defaultToSpeaker)
         
         // Giving the output path to the audioRecorder object and record
+        // NOTE: audioRecorder is unwrapped in here.
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
@@ -96,6 +103,16 @@ class RecordingViewController: UIViewController {
     } // stopRecodring
     
 
+    
+    // This method is from the AVAudioRecorderDelegate.
+    // It is going to be called by AVAudioRecorder right after the recording is finished.
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        
+        print("Recording is finished")
+        
+        
+        
+    } // end audioRecorderDidFinishRecording()
     
     
     
