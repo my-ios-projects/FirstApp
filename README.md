@@ -52,3 +52,8 @@ and each image will be added to a separate image set.
 
 ### 6 Recording Audio
 Recoding sound using `AVFoundation`
+
+
+### 7 Delegation
+`AVAudioRecorderDelegate` is used to implement `audioRecorderDidFinishRecording`; which is 
+called by `AVAudioRecord` once the recording finishes.
