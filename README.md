@@ -64,5 +64,5 @@ called by `AVAudioRecord` once the recording finishes.
 - Then, perform segue is called from the code; right after the recoring finishes.
 - `prepare` is called before be `performSegue`; so you can instantiate the next view controller and assgin a value to it.
 
-
-
+### 9 Adding UI Elements inside `StackView`s
+The real beauty to put UI elements inside stackview is that you `autolayout` the `stackView` them sleves; and what is side them is set properly as you configure  `Aligments` and `Distribution`.
