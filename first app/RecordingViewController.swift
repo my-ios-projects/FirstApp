@@ -109,6 +109,14 @@ class RecordingViewController: UIViewController,
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         
         print("Recording is finished")
+        if flag {
+            // Perform the segue and send the saved audio path.
+            performSegue(withIdentifier: "move", sender: audioRecorder.url)
+        }
+        else{
+            print("Recording have not been successfully saved :(")
+        }
+        
         
         
         
