@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         print("viewWillAppear")
     }
 
-    
+
 
 
     @IBAction func recordAudio(_ sender: Any) {
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
         recoding.isEnabled = false
         stopRecording.isEnabled = true
-
+        
     } // end recordAudio()
     
     @IBAction func stopRecodring(_ sender: Any) {
@@ -63,6 +63,8 @@ class ViewController: UIViewController {
         stateLabel.text = "Tab to Record"
 
     } // stopRecodring
+    
+
     
     
     
