@@ -36,26 +36,7 @@ class PlayAudioViewController: UIViewController {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
     
-    @IBAction func playSoundForButton(_ sender: UIButton) {
-        switch(ButtonType(rawValue: sender.tag)!) {
-        case .slow:
-            playSound(rate: 0.5)
-        case .fast:
-            playSound(rate: 1.5)
-        case .chipmunk:
-            playSound(pitch: 1000)
-        case .vader:
-            playSound(pitch: -1000)
-        case .echo:
-            playSound(echo: true)
-        case .reverb:
-            playSound(reverb: true)
-        }
-        
-        configureUI(.playing)
-    }
-    
-    
+
     
     
     
@@ -77,16 +58,35 @@ class PlayAudioViewController: UIViewController {
     
     
     // Action for the six buttons
-    @IBAction func playSoundButtons(){
+    // `sender` is the button object that has called this action
+    @IBAction func playSoundButtons(_ sender: UIButton) {
         print("play sound")
         
+        //
+        switch(ButtonType(rawValue: sender.tag)!) {
+            case .slow:
+                playSound(rate: 0.5)
+            case .fast:
+                playSound(rate: 1.5)
+            case .chipmunk:
+                playSound(pitch: 1000)
+            case .vader:
+                playSound(pitch: -1000)
+            case .echo:
+                playSound(echo: true)
+            case .reverb:
+                playSound(reverb: true)
+        }
         
+        configureUI(.playing)
+
     } // end playSoundButtons()
     
     
     @IBAction func stopSoundButton(){
         print("stop sound")
         stopAudio()
+
         
     } // end stopSoundButton()
     
