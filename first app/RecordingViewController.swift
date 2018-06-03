@@ -40,6 +40,7 @@ class RecordingViewController: UIViewController,
         
     } // end viewDidLoad
     
+    
     override func viewDidAppear(_ animated: Bool) {
         print("viewDidAppear")
     }
@@ -59,10 +60,8 @@ class RecordingViewController: UIViewController,
         recoding.isEnabled = false
         stopRecording.isEnabled = true
         
-        
-    
-        
-        
+        /*Recording*/
+
         // Get the document directory
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
                                                           .userDomainMask, true)[0] as String
