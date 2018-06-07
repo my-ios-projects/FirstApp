@@ -13,18 +13,29 @@ import AVFoundation
 extension PlayAudioViewController : AVAudioPlayerDelegate {
     
     // MARK: Alerts
-    
+    // 1 * If you have constants and messages; use Structs to collect the in one place.
+    //   * NOTE: every variable is static
     struct Alerts {
-        static let DismissAlert = "Dismiss"
-        static let RecordingDisabledTitle = "Recording Disabled"
-        static let RecordingDisabledMessage = "You've disabled this app from recording your microphone. Check Settings."
-        static let RecordingFailedTitle = "Recording Failed"
-        static let RecordingFailedMessage = "Something went wrong with your recording."
-        static let AudioRecorderError = "Audio Recorder Error"
-        static let AudioSessionError = "Audio Session Error"
-        static let AudioRecordingError = "Audio Recording Error"
-        static let AudioFileError = "Audio File Error"
-        static let AudioEngineError = "Audio Engine Error"
+        static let DismissAlert
+            = "Dismiss"
+        static let RecordingDisabledTitle
+            = "Recording Disabled"
+        static let RecordingDisabledMessage
+            = "You've disabled this app from recording your microphone. Check Settings."
+        static let RecordingFailedTitle
+            = "Recording Failed"
+        static let RecordingFailedMessage
+            = "Something went wrong with your recording."
+        static let AudioRecorderError
+            = "Audio Recorder Error"
+        static let AudioSessionError
+            = "Audio Session Error"
+        static let AudioRecordingError
+            = "Audio Recording Error"
+        static let AudioFileError
+            = "Audio File Error"
+        static let AudioEngineError
+            = "Audio Engine Error"
     }
     
     // MARK: PlayingState (raw values correspond to sender tags)
@@ -40,9 +51,13 @@ extension PlayAudioViewController : AVAudioPlayerDelegate {
         } catch {
             showAlert(Alerts.AudioFileError, message: String(describing: error))
         }
-    }
+    } // end setupAudio()
     
-    func playSound(rate: Float? = nil, pitch: Float? = nil, echo: Bool = false, reverb: Bool = false) {
+    func playSound(rate:   Float? = nil,
+                   pitch:  Float? = nil,
+                   echo:   Bool   = false,
+                   reverb: Bool   = false
+        ) {
         
         // initialize audio engine components
         audioEngine = AVAudioEngine()
